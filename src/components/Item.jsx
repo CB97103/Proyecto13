@@ -13,7 +13,7 @@ const Item = (props) => {
             </div>
             <div className="nombre-personaje">
              <h3>{props.nombre}</h3>
-             <p>{props.genre} </p>
+
              </div>
         </div>
         </div>
