@@ -1,0 +1,14 @@
+.tarjeta-p{
+  width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: right;
+    transform: translate(-10%, 5%);
+}
+
+.tarjeta {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 5px;
+}
