@@ -1,50 +1,86 @@
-.logout{
-    width: 160px;
-    height: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    transition: all 400ms ease;
-    transform: translate(1000%, 100%);
-    color: #fff;
+.contenedor-principal {
+  width: 100%;
+  display: flex;
+}
+.superior {
+  width: 100%;
+  height: 100px;
+  background-color: none;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+}
+.logout {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(132, 132, 132, 0.5);
+  color: #fff;
+  transform: translate(-40%, 50%);
+  font-size: 18px;
 }
 
-.logout button:hover{
-    box-shadow:5px 5px 20px rgba(0,0,0,0.4);
-    transform:translateY(-10%);
-    background-color: #fafafad7;
-    color: #fff;
+.logout:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  background-color: #fafafad7;
+  color: rgb(121, 0, 115);
+  transition: all 50ms ease;
 }
 
+.contenedor-personajes {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+}
 
-.personajes{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: right;
-    transform: translate(-7%, -70%);
-}  
+.personajes {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+  transform: translate(-10%, -10%);
+}
 .contenedor-botones {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-   /* transform: translate(-10%, 4000%);*/
-    position:relative
+  width: 100%;
+  height: 140px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 40px 0px;
 }
 
-.botones-p{
-    height: 50px;
-    width: 120px; 
-    margin: 0 20px;
-    font-size: 16px;
-    border: 0 solid;
-    border-radius: 6px;
-    background:  rgb(121, 0, 115);
-    color: #ffffff;
+.botones-p {
+  height: 50px;
+  width: 120px;
+  margin: 0 11px;
+  font-size: 17px;
+  border: 0 solid;
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(200, 200, 200, 0.349);
+  background: #370964d7;
+  color: #ffffff;
+  transform: translate(34%, -10%);
+}
+
+.botones-p:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  background-color: #fafafad7;
+  color: rgb(121, 0, 115);
+}
+
+@media screen and (max-width: 768px) {
+  .superior {
+    grid-template-columns: 100%;
+  }
+  .contendor-personajes {
+    grid-template-columns: 100%;
+  }
 }

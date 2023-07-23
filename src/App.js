@@ -4,7 +4,7 @@ import ProtectedRoutes from "./components/ProtectedRoutes"
 import Detail from './components/Detail';
 import Principal from './paginas/Principal';
 import {Routes, Route} from "react-router-dom";
-import Listado from './components/Listado';
+
 
 
 function App() {

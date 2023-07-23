@@ -1,10 +1,11 @@
-.tarjeta-p{
+.tarjeta-p {
   width: 100%;
-    height: auto;
-    display: flex;
-    margin: 0 auto;
-    justify-content: right;
-    transform: translate(-10%, 5%);
+  height: auto;
+  display: flex;
+  flex-direction: colums;
+  margin: 0 auto;
+  justify-content: right;
+  transform: translate(-20%, 1%);
 }
 
 .tarjeta {
