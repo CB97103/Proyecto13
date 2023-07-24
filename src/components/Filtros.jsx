@@ -9,13 +9,13 @@ const Filtros = ({ setFiltros }) => {
           <div className="categoria-titulo">
             <h3>Categorias</h3>
           </div>
-          <div className="filtros">
+          <div className="buscar-categoria">
             <ul>
               {Categorias.map((categoria) => (
                 <li key={categoria.nombre}>
                   <button
                     className="boton-estilo"
-                    onClick={() => setFiltros(categoria.valor)}
+                    onClick={() => setFiltros(categoria.valor)} //valor es el dado en las categorias
                   >
                     {categoria.nombre}
                   </button>

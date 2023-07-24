@@ -1,5 +1,5 @@
 .contenedor-detalles {
-  width: 35%;
+  width: 50%;
   margin: 20px auto; /*Se le quita el fondo de*/
   margin: 60px 80px 0px 0px;
   border-radius: 10px;
@@ -10,19 +10,22 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transition: all 400ms ease;
   padding: 30px;
-  transform: translate(80%, 60%);
+  transform: translate(40%, 8%);
 }
 .columna {
-  display: grid;
-  grid-template-columns: 25% 25%;
+  display: flex;
+  flex-direction:row;
 }
 .detalles {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 20px 0px 0px 70px ;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 .detalles button {
-  height: 50px;
+  height: 40px;
   width: 120px;
   font-size: 17px;
   border: 0 solid;
@@ -30,9 +33,13 @@
   box-shadow: 0 0 3px rgba(200, 200, 200, 0.349);
   background: #370964d7;
   color: #ffffff;
-  transform: translate(34%, -10%);
+  transform: translate(5%, -100%);
 }
 
+.boton-detalles{
+  align-items: center;
+  margin: 80px 0px 0px 0px ;
+}
 .detalles button:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   background-color: #fafafad7;

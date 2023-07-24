@@ -1,10 +1,4 @@
 /*--------------------------Tarjeta-------------*/
-.contendenor-tarjeta {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 5px;
-}
 
 .tarjeta-personaje {
   width: 240px;
@@ -39,9 +33,6 @@ a {
 
 @media screen and (max-width: 768px) {
   .contenedor-tarjeta {
-    grid-template-columns: 100%;
-  }
-  .contenedor-video {
     grid-template-columns: 100%;
   }
 }

@@ -1,6 +1,9 @@
 .contenedor-categoria {
-  width: 100%;
+  width: 400px;
   display: flex;
+  align-content: left;
+  margin-left: 60px;
+  
 }
 
 .cuadro-categoria {
@@ -15,7 +18,7 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transition: all 400ms ease;
   padding: 30px;
-  transform: translate(130%, -8%);
+
 }
 
 .categoria-titulo h3 {
@@ -28,7 +31,7 @@ ul {
   list-style-type: none;
   margin-left: -30%;
 }
-.filtros button {
+.buscar-categoria button {
   width: 180px;
   height: 50px;
   display: flex;
@@ -40,7 +43,7 @@ ul {
   transition: all 20ms ease;
 }
 
-.filtros button:hover {
+.buscar-categoria button:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-2%);
   background-color: rgba(250, 250, 250, 0.843);

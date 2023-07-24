@@ -5,11 +5,16 @@
   flex-direction: colums;
   margin: 0 auto;
   justify-content: right;
-  transform: translate(-20%, 1%);
+  transform: translate(-10%, -15%);
 }
 
 .tarjeta {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    grid-template-columns: 100%;
+  }
 }

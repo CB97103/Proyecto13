@@ -4,9 +4,7 @@ import { useState, useEffect } from "react";
 import "../style/Detail.css";
 
 const Detail = () => {
-  let { id } = useParams(); //para que se vea en la pagina
-  let { nombre } = useParams();
-  let { gender } = useParams();
+  let { id } = useParams();
   const [characters, setCharacters] = useState([]);
   const [personaje, setPersonaje] = useState({});
   const navigate = useNavigate();
@@ -18,47 +16,47 @@ const Detail = () => {
   };
 
   useEffect(() => {
-    let temp = characters?.filter((personaje) => personaje.id === parseInt(id)); //este id que seria /Fitran los producto que necesitamos utilizando el id
+    reqApi();
+    let temp = characters?.filter((character) => character.id === parseInt(id)); //este id que seria /Fitran los producto que necesitamos utilizando el id
     let temp2 = temp[0];
     setPersonaje(temp2); //Seteamos el valor de producto
   }, [id, characters]);
-  /*}  useEffect(() => {
-        let temp = characters?.filter(
-          (character) => character.category === filtros
-        );
-        setCharactersFiltrados(temp);
-      }, [filtros]);
-      {
-        console.log(setFiltros);
-      } */
-  //el title en este caso seria el nombre
+
   return (
     <>
       <div className="contenedor-detalles">
         <div className="columna">
           <div className="imagend">
             <p>
-              {" "}
-              <img src={personaje?.imagen} alt="" />{" "}
+              <img src={personaje?.image} alt="" />
             </p>
           </div>
           <div className="detalles">
             <p>
-              <strong>Nombre: </strong> {personaje?.name}
+              <strong>Name: </strong> {personaje?.name}
             </p>
             <p>
-              <strong>Id: </strong> {personaje?.id}
+              <strong>Gender:</strong> {personaje?.gender}
             </p>
             <p>
-              <strong>Género:</strong> {personaje?.gender}
+              <strong>Species: </strong> {personaje?.species}
             </p>
-            <button onClick={() => {
-            navigate ('/Principal')
-          }}>Regresar</button>
+            <p>
+              <strong>Type: </strong> {personaje?.type}
+            </p>
+            <p>
+              <strong>Status: </strong> {personaje?.status}
+            </p>
+            <div className="boton-detalles">
+              <button
+                onClick={() => {
+                  navigate("/Principal");
+                }}
+              >
+                Regresar
+              </button>
+            </div>
           </div>
-          <p></p>
-          <p></p>
-          <p></p>
         </div>
       </div>
     </>
